@@ -1,0 +1,5 @@
+epicsEnvSet("IOC","iocTest")
+epicsEnvSet("TOP","/usr/local/epics/modbus-R2-10-1")
+epicsEnvSet("SUPPORT","/usr/local/epics")
+epicsEnvSet("ASYN","/usr/local/epics/asyn4-32")
+epicsEnvSet("EPICS_BASE","/usr/local/epics/base-3.15.5")

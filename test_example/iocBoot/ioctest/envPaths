@@ -1,0 +1,4 @@
+epicsEnvSet("ARCH","linux-x86_64")
+epicsEnvSet("IOC","ioctest_pv")
+epicsEnvSet("TOP","/usr/local/epics/test_example")
+epicsEnvSet("EPICS_BASE","/usr/local/epics/base")

@@ -1,0 +1,8 @@
+include "base.dbd"
+include "asyn.dbd"
+include "drvAsynIPPort.dbd"
+include "drvAsynSerialPort.dbd"
+include "modbusSupport.dbd"
+include "asSupport.dbd"
+registrar(testModbusSyncIORegister)
+

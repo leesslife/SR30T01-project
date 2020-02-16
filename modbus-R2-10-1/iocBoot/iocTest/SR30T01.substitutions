@@ -1,0 +1,114 @@
+# asyn record for the underlying asyn octet port
+file "$(ASYN)/db/asynRecord.db" { pattern
+{P,           R,       PORT,      ADDR,   IMAX,    OMAX}
+{SR30T01:    OctetAsyn,    SR30T01,     0,      80,      80}
+}
+
+file "../../db/statistics.template" { pattern
+{P,           R,       PORT,       SCAN}
+{SR30T01:,    TAX01,     SR01AX01,  "10 second"}
+{SR30T01:,    TAX02,     SR01AX02,  "10 second"}
+{SR30T01:,    TAX03,     SR01AX03,  "10 second"}
+{SR30T01:,    TAX04,     SR01AX04,  "10 second"}
+{SR30T01:,    TAX05,     SR01AX05,  "10 second"}
+{SR30T01:,    TAY01,     SR01AY01,  "10 second"}
+}
+
+file "../../db/ai.template" { pattern
+{P,          R,         PORT,        OFFSET,        BITS,       EGUL,        EGUF,          PREC,       SCAN}
+{SR01:,      AX001,     SR01AX01,    0,             16,         0,           6553.5,        1,          "I/O Intr"}
+{SR01:,      AX002,     SR01AX01,    1,             16,         0,           6553.5,        1,          "I/O Intr"}
+{SR01:,      AX003,     SR01AX01,    2,             16,         0,           6553.5,        1,          "I/O Intr"}
+{SR01:,      AX005,     SR01AX01,    4,             16,         0,           6553.5,        1,          "I/O Intr"}
+{SR01:,      AX006,     SR01AX01,    5,             16,         0,           6553.5,        1,          "I/O Intr"}
+{SR01:,      AX007,     SR01AX01,    6,             16,         0,           6553.5,        1,          "I/O Intr"}
+{SR01:,      AX008,     SR01AX01,    7,             16,         0,           6553.5,        1,          "I/O Intr"}
+{SR01:,      AX009,     SR01AX01,    8,             16,         0,           65535,         0,          "I/O Intr"}
+{SR01:,      AX010,     SR01AX01,    9,             16,         0,           6553.5,        1,          "I/O Intr"}
+}
+
+file "../../db/ai.template" { pattern
+{P,          R,         PORT,        OFFSET,        BITS,       EGUL,        EGUF,          PREC,       SCAN}
+{SR01:,      AX011,     SR01AX02,    0,             16,         0,           65535,         0,          "I/O Intr"}
+{SR01:,      AX012,     SR01AX02,    1,             16,         0,           65535,         0,          "I/O Intr"}
+{SR01:,      AX013,     SR01AX02,    2,             16,         0,           65535,         0,          "I/O Intr"}
+{SR01:,      AX014,     SR01AX02,    3,             16,         0,           65535,         0,          "I/O Intr"}
+{SR01:,      AX015,     SR01AX02,    4,             16,         0,           65535,         0,          "I/O Intr"}
+{SR01:,      AX016,     SR01AX02,    5,             16,         0,           6553.5,        1,          "I/O Intr"}
+{SR01:,      AX017,     SR01AX02,    6,             16,         0,           6553.5,        1,          "I/O Intr"}
+{SR01:,      AX018,     SR01AX02,    7,             16,         0,           65535,         0,          "I/O Intr"}
+{SR01:,      AX019,     SR01AX02,    8,             16,         0,           65535,         0,          "I/O Intr"}
+{SR01:,      AX020,     SR01AX02,    9,             16,         0,           65535,         0,          "I/O Intr"}
+}
+
+file "../../db/ai.template" { pattern
+{P,          R,         PORT,        OFFSET,        BITS,       EGUL,        EGUF,          PREC,       SCAN}
+{SR01:,      AX021,     SR01AX03,    0,             16,         0,           65535,         0,          "I/O Intr"}
+{SR01:,      AX022,     SR01AX03,    1,             16,         0,           65535,         0,          "I/O Intr"}
+{SR01:,      AX023,     SR01AX03,    2,             16,         0,           6553.5,        1,          "I/O Intr"}
+{SR01:,      AX024,     SR01AX03,    3,             16,         0,           65535,         0,          "I/O Intr"}
+{SR01:,      AX028,     SR01AX03,    7,             16,         0,           6553.5,        1,          "I/O Intr"}
+{SR01:,      AX030,     SR01AX03,    9,             16,         0,           6553.5,        1,          "I/O Intr"}
+}
+
+file "../../db/ai.template" { pattern
+{P,          R,         PORT,        OFFSET,        BITS,       EGUL,        EGUF,          PREC,       SCAN}
+{SR01:,      AX034,     SR01AX04,    3,             1,          0,           1,             0,          "I/O Intr"}
+{SR01:,      AX036,     SR01AX04,    5,             16,         0,           65535,         0,          "I/O Intr"}
+{SR01:,      AX037,     SR01AX04,    6,             16,         0,           65535,         0,          "I/O Intr"}
+{SR01:,      AX038,     SR01AX04,    7,             16,         0,           65535,         0,          "I/O Intr"}
+}
+
+file "../../db/ai.template" { pattern
+{P,          R,         PORT,        OFFSET,        BITS,       EGUL,        EGUF,          PREC,       SCAN}
+{SR01:,      AX041,     SR01AX05,    0,             16,         0,           65535,         0,          "I/O Intr"}
+{SR01:,      AX042,     SR01AX05,    1,             16,         0,           65535,         0,          "I/O Intr"}
+{SR01:,      AX043,     SR01AX05,    2,             16,         0,           65535,         0,          "I/O Intr"}
+{SR01:,      AX044,     SR01AX05,    3,             16,         0,           65535,         0,          "I/O Intr"}
+{SR01:,      AX045,     SR01AX05,    4,             16,         0,           65535,         0,          "I/O Intr"}
+{SR01:,      AX046,     SR01AX05,    5,             16,         0,           65535,         0,          "I/O Intr"}
+{SR01:,      AX047,     SR01AX05,    6,             16,         0,           65535,         0,          "I/O Intr"}
+{SR01:,      AX049,     SR01AX05,    8,             16,         0,           6553.5,        1,          "I/O Intr"}
+{SR01:,      AX050,     SR01AX05,    9,             16,         0,           6553.5,        1,          "I/O Intr"}
+}
+
+file "../../db/ai.template" { pattern
+{P,          R,         PORT,        OFFSET,        BITS,       EGUL,        EGUF,          PREC,       SCAN}
+{SR01:,      AX051,     SR01AX06,    0,             16,         0,           65535,         0,          "I/O Intr"}
+}
+
+file "../../db/ao.template" { pattern
+{P,          R,         PORT,       OFFSET,         BITS,       EGUL,        EGUF,          PREC}
+{SR01:,      AY001,     SR01AY01,    0,             16,         0,           6553.5,        1,  }
+{SR01:,      AY002,     SR01AY01,    1,             16,         0,           65535,         0,  }
+{SR01:,      AY003,     SR01AY01,    2,             16,         0,           65535,         0,  }
+{SR01:,      AY004,     SR01AY01,    3,             16,         0,           65535,         0,  }
+{SR01:,      AY005,     SR01AY01,    4,             16,         0,           65535,         0,  }
+{SR01:,      AY006,     SR01AY01,    5,             16,         0,           65535,         0,  }
+{SR01:,      AY007,     SR01AY01,    6,             16,         0,           6553.5,        1,  }
+{SR01:,      AY008,     SR01AY01,    7,             16,         0,           6553.5,        1,  }
+{SR01:,      AY009,     SR01AY01,    8,             16,         0,           65535,         0,  }
+{SR01:,      AY010,     SR01AY01,    9,             16,         0,           65535,         0,  }
+{SR01:,      AY011,     SR01AY01,    10,            16,         0,           65535,         0,  }
+{SR01:,      AY012,     SR01AY01,    11,            16,         0,           65535,         0,  }
+{SR01:,      AY013,     SR01AY01,    12,            16,         0,           65535,         0,  }
+{SR01:,      AY014,     SR01AY01,    13,            16,         0,           6553.5,        1,  }
+{SR01:,      AY015,     SR01AY01,    14,            16,         0,           65535,         0,  }
+{SR01:,      AY016,     SR01AY01,    18,            16,         0,           6553.5,        1,  }
+{SR01:,      AY017,     SR01AY01,    20,            16,         0,           6553.5,        1,  }
+{SR01:,      AY018,     SR01AY01,    24,            1,          0,           1,             0,  }
+{SR01:,      AY019,     SR01AY01,    26,            16,         0,           65535,         0,  }
+{SR01:,      AY020,     SR01AY01,    27,            16,         0,           65535,         0,  }
+{SR01:,      AY021,     SR01AY01,    28,            16,         0,           65535,         0,  }
+{SR01:,      AY022,     SR01AY01,    31,            16,         0,           65535,         0,  }
+{SR01:,      AY023,     SR01AY01,    32,            16,         0,           65535,         0,  }
+{SR01:,      AY024,     SR01AY01,    33,            16,         0,           65535,         0,  }
+{SR01:,      AY025,     SR01AY01,    34,            16,         0,           65535,         0,  }
+{SR01:,      AY026,     SR01AY01,    35,            16,         0,           65535,         0,  }
+{SR01:,      AY027,     SR01AY01,    36,            16,         0,           65535,         0,  }
+{SR01:,      AY028,     SR01AY01,    37,            16,         0,           65535,         0,  }
+{SR01:,      AY029,     SR01AY01,    39,            16,         0,           6553.5,        1,  }
+{SR01:,      AY030,     SR01AY01,    40,            16,         0,           6553.5,        1,  }
+{SR01:,      AY031,     SR01AY01,    41,            16,         0,           65535,         0,  }
+}
+
